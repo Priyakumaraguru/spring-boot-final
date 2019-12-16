@@ -23,9 +23,15 @@ lib 'shlib'
 	    stage('delete')
     {
     steps{
+   bulkjob()
+    }
+    }
+	   /* stage('delete')
+    {
+    steps{
    delete()
     }
-    }
+    }*/
     
 
       stage('clean and build')
