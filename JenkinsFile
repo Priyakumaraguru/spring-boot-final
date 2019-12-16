@@ -26,6 +26,12 @@ lib 'shlib'
    delete()
     }
     }
+    stage('deletera')
+    {
+    steps{
+   deletera("pipeline",11,16)
+    }
+    }
 
       stage('clean and build')
             {
