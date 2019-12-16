@@ -36,7 +36,7 @@ lib 'shlib'
     {
    steps{
     
-    delbuild'pipeline',23,27
+    delbuild 'pipeline',23,27
   
   }
     }
