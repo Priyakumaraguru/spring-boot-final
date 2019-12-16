@@ -20,18 +20,26 @@ lib 'shlib'
                     sendNotifications 'STARTED'
                  }
             }
-	    stage('delete')
+	   /* stage('delete')
     {
     steps{
    bulkjob()
     }
-    }
-	   /* stage('delete')
+    }*/
+	  stage('delete')
     {
     steps{
    delete()
     }
-    }*/
+    }
+    stage('deletera')
+    {
+   steps{
+    
+    deletera 'pipeline',23,27
+  
+  }
+    }
     
 
       stage('clean and build')
