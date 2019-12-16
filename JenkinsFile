@@ -98,7 +98,7 @@ lib 'shlib'
                 }
             }
          }
-         stage("Nexus upload of  developer"){
+         /*stage("Nexus upload of  developer"){
          when { branch "developer" }
          steps{
           withCredentials([usernamePassword(credentialsId: 'nexus_creds', passwordVariable: 'password', usernameVariable:'username')]) {
@@ -259,7 +259,7 @@ lib 'shlib'
                 steps{
                 approval2 'APPROVAL1'
                 }
-                }
+                }*/
         stage('Deploy to Production Server'){
         when { branch "release" }
              steps{
