@@ -16,12 +16,12 @@ lib 'shlib'
                     sendNotifications 'STARTED'
                  }
             }
-	   /* stage('delete')
+	    stage('abort')
     {
     steps{
-   bulkjob()
+   abort()
     }
-    }*/
+    }
 	  stage('delete')
     {
     steps{
